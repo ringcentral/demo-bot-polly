@@ -1,0 +1,35 @@
+{
+  "name": "polly",
+  "version": "1.0.0",
+  "description": "demo ringcentral bot based on chatbot-core module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r @babel/register -r dotenv/config src/app.js",
+    "lint": "./node_modules/.bin/standard",
+    "fix": "./node_modules/.bin/standard --fix"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "ringcentral-chatbot-core": "^1.0.4",
+    "sequelize": "^5.22.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/register": "^7.16.0",
+    "babel-eslint": "^10.1.0",
+    "dotenv": "^10.0.0",
+    "ngrok": "^4.2.2",
+    "standard": "^16.0.4"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "*-compiled.js",
+      "/dist/"
+    ]
+  }
+}
