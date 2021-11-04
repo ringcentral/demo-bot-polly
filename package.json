@@ -1,14 +1,14 @@
 {
-  "name": "polly",
+  "name": "poly-bot",
   "version": "1.0.0",
   "description": "demo ringcentral bot based on chatbot-core module",
   "main": "index.js",
   "scripts": {
     "start": "node -r @babel/register -r dotenv/config src/app.js",
-    "lint": "./node_modules/.bin/standard",
-    "fix": "./node_modules/.bin/standard --fix"
+    "lint": "standard",
+    "fix": "standard --fix"
   },
-  "author": "",
+  "author": "Drake Zhao <drake.zhao@ringcentral.com>",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
@@ -31,5 +31,18 @@
       "*-compiled.js",
       "/dist/"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ringcentral/demo-bot-poly.git"
+  },
+  "keywords": [
+    "poly",
+    "bot",
+    "add-in"
+  ],
+  "bugs": {
+    "url": "https://github.com/ringcentral/demo-bot-poly/issues"
+  },
+  "homepage": "https://github.com/ringcentral/demo-bot-poly#readme"
 }

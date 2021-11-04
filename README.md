@@ -1,4 +1,4 @@
-# A demo polly bot
+# A demo Poly bot
 
 This is a simple RingCentral bot add-in based on [https://github.com/ringcentral/ringcentral-chatbot-core](https://github.com/ringcentral/ringcentral-chatbot-core)
 
