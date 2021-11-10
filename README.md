@@ -13,7 +13,7 @@ Let's start this simple chatbot app.
 ```bash
 # get the code
 git clone git@github.com:ringcentral/demo-bot-poly.git
-cd ringcentral-personal-chatbot-js
+cd demo-bot-poly
 
 # install dependecies
 npm i
@@ -29,10 +29,8 @@ Forwarding                    https://xxxx.ap.ngrok.io -> localhost:6066
 Login to [developer.ringcentral.com](https://developer.ringcentral.com/) and create Web-based App:
 
 - Application Type: Bot Add-in
-- Platform Type: Browser-based
-- Carrier: accept the default values
-- Permissions Needed: Edit Extensions, Glip, Read Accounts, Team Messaging, Webhook SubscriptionsInfo, Read Contacts, Read Presence, Webhook Subscriptions
-- Set OAuth Redirect URI: Using your ngrok HTTPS URL from above, enter in the following value: `https://xxxx.ap.ngrok.io/rc/oauth`.
+- Permissions Needed: Edit Extensions, Read Accounts, Team Messaging, Read Contacts, Read Presence, Webhook Subscriptions
+- Set OAuth Redirect URI: Using your ngrok HTTPS URL from above, enter in the following value: `https://xxxx.ap.ngrok.io/bot/oauth`.
 
 ```bash
 cp .env.sample .env

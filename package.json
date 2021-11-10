@@ -4,6 +4,7 @@
   "description": "demo ringcentral bot based on chatbot-core module",
   "main": "index.js",
   "scripts": {
+    "ngrok": "ngrok http -region us 6066 ",
     "start": "node -r @babel/register -r dotenv/config src/app.js",
     "lint": "standard",
     "fix": "standard --fix"
@@ -12,7 +13,7 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
-    "ringcentral-chatbot-core": "^1.0.4",
+    "ringcentral-chatbot-core": "^1.0.5",
     "sequelize": "^5.22.4"
   },
   "devDependencies": {
@@ -23,7 +24,8 @@
     "babel-eslint": "^10.1.0",
     "dotenv": "^10.0.0",
     "ngrok": "^4.2.2",
-    "standard": "^16.0.4"
+    "standard": "^16.0.4",
+    "sqlite3": "^5.0.2"
   },
   "standard": {
     "parser": "babel-eslint",
